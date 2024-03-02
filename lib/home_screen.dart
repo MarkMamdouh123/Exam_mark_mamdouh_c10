@@ -3,6 +3,7 @@ import 'package:exam/secondScreen.dart';
 import 'package:exam/thirdScreen.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/widgets.dart';
 import 'package:smooth_page_indicator/smooth_page_indicator.dart';
 
 class HomeScreen extends StatefulWidget {
@@ -262,36 +263,43 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Container(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-                      decoration: BoxDecoration(
-                        color: Color(0xffF9F5FF),
-                      ),
-                      child: Row(
-                        children: [
-                          Image.asset('assets/images/mind.png'),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text('Relaxation'),
-                        ],
+                    Expanded(
+                      child: Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+                        decoration: BoxDecoration(
+                          color: Color(0xffF9F5FF),
+                        ),
+                        child: Row(
+                          children: [
+                            Image.asset('assets/images/mind.png'),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text('Relaxation'),
+                          ],
+                        ),
                       ),
                     ),
-                    Container(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-                      decoration: BoxDecoration(
-                        color: Color(0xffFDF2FA),
-                      ),
-                      child: Row(
-                        children: [
-                          Image.asset('assets/images/peace.png'),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text('Meditation'),
-                        ],
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Expanded(
+                      child: Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+                        decoration: BoxDecoration(
+                          color: Color(0xffFDF2FA),
+                        ),
+                        child: Row(
+                          children: [
+                            Image.asset('assets/images/peace.png'),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text('Meditation'),
+                          ],
+                        ),
                       ),
                     ),
                   ],
@@ -302,36 +310,43 @@ class _HomeScreenState extends State<HomeScreen> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
-                    Container(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 15),
-                      decoration: BoxDecoration(
-                        color: Color(0xffFFFAF5),
-                      ),
-                      child: Row(
-                        children: [
-                          Image.asset('assets/images/breathing.png'),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text('Breathing'),
-                        ],
+                    Expanded(
+                      child: Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 15, horizontal: 15),
+                        decoration: BoxDecoration(
+                          color: Color(0xffFFFAF5),
+                        ),
+                        child: Row(
+                          children: [
+                            Image.asset('assets/images/breathing.png'),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text('Breathing'),
+                          ],
+                        ),
                       ),
                     ),
-                    Container(
-                      padding:
-                          EdgeInsets.symmetric(vertical: 15, horizontal: 22),
-                      decoration: BoxDecoration(
-                        color: Color(0xffF9F5FF),
-                      ),
-                      child: Row(
-                        children: [
-                          Image.asset('assets/images/yoga.png'),
-                          SizedBox(
-                            width: 10,
-                          ),
-                          Text('Yoga'),
-                        ],
+                    SizedBox(
+                      width: 5,
+                    ),
+                    Expanded(
+                      child: Container(
+                        padding:
+                            EdgeInsets.symmetric(vertical: 15, horizontal: 22),
+                        decoration: BoxDecoration(
+                          color: Color(0xffF9F5FF),
+                        ),
+                        child: Row(
+                          children: [
+                            Image.asset('assets/images/yoga.png'),
+                            SizedBox(
+                              width: 10,
+                            ),
+                            Text('Yoga'),
+                          ],
+                        ),
                       ),
                     ),
                   ],

@@ -94,7 +94,7 @@ class _SecondScreenState extends State<SecondScreen> {
                         children: [
                           Row(
                             children: [
-                              Icon(CupertinoIcons.heart),
+                              Icon(Icons.list),
                               Text('To do'),
                             ],
                           ),
@@ -139,7 +139,7 @@ class _SecondScreenState extends State<SecondScreen> {
                 style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
               ),
               SizedBox(
-                height: 20,
+                height: 10,
               ),
               TabBar(
                 tabs: [
@@ -160,91 +160,95 @@ class _SecondScreenState extends State<SecondScreen> {
               SizedBox(
                 height: 20,
               ),
-              Container(
-                padding: EdgeInsets.all(33),
-                decoration: BoxDecoration(
-                  color: Color(0xffEAECF5),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      children: [
-                        Container(
-                          padding:
-                              EdgeInsets.symmetric(horizontal: 2, vertical: 2),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: Text('7 days'),
-                        ),
-                        Text(
-                          "Morning Yoga",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 22),
-                        ),
-                        Text(
-                          "Improve mental focus",
-                        ),
-                        Row(
-                          children: [
-                            Icon(Icons.watch_later_rounded),
-                            Text(
-                              "30 min",
+              Expanded(
+                child: Container(
+                  padding: EdgeInsets.all(33),
+                  decoration: BoxDecoration(
+                    color: Color(0xffEAECF5),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 2, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(10),
                             ),
-                          ],
-                        ),
-                      ],
-                    ),
-                    Image.asset('assets/images/stretchYoga.png')
-                  ],
+                            child: Text('7 days'),
+                          ),
+                          Text(
+                            "Morning Yoga",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 22),
+                          ),
+                          Text(
+                            "Improve mental focus",
+                          ),
+                          Row(
+                            children: [
+                              Icon(Icons.watch_later_rounded),
+                              Text(
+                                "30 min",
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Image.asset('assets/images/stretchYoga.png')
+                    ],
+                  ),
                 ),
               ),
               SizedBox(
                 height: 50,
               ),
-              Container(
-                padding: EdgeInsets.symmetric(
-                  vertical: 22,
-                ),
-                decoration: BoxDecoration(
-                  color: Color(0xffEAECF5),
-                ),
-                child: Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                  children: [
-                    Column(
-                      children: [
-                        Container(
-                          padding:
-                              EdgeInsets.symmetric(horizontal: 2, vertical: 2),
-                          decoration: BoxDecoration(
-                            color: Colors.white,
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: Text('7 days'),
-                        ),
-                        Text(
-                          "Plank Exercise",
-                          style: TextStyle(
-                              fontWeight: FontWeight.bold, fontSize: 22),
-                        ),
-                        Text(
-                          "Improve Posture and stability",
-                        ),
-                        Row(
-                          children: [
-                            Icon(Icons.watch_later_rounded),
-                            Text(
-                              "30 min",
+              Expanded(
+                child: Container(
+                  padding: EdgeInsets.symmetric(
+                    vertical: 22,
+                  ),
+                  decoration: BoxDecoration(
+                    color: Color(0xffEAECF5),
+                  ),
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      Column(
+                        children: [
+                          Container(
+                            padding: EdgeInsets.symmetric(
+                                horizontal: 2, vertical: 2),
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(10),
                             ),
-                          ],
-                        ),
-                      ],
-                    ),
-                    Image.asset('assets/images/pngwing 1.png')
-                  ],
+                            child: Text('3 days'),
+                          ),
+                          Text(
+                            "Plank Exercise",
+                            style: TextStyle(
+                                fontWeight: FontWeight.bold, fontSize: 22),
+                          ),
+                          Text(
+                            "Improve Posture and stability",
+                          ),
+                          Row(
+                            children: [
+                              Icon(Icons.watch_later_rounded),
+                              Text(
+                                "30 min",
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
+                      Image.asset('assets/images/pngwing 1.png')
+                    ],
+                  ),
                 ),
               ),
             ],
